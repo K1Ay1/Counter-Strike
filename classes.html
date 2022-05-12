@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <title>Counter-Strike</title>
+</head>
+<body>
+  
+  <!-- header -->
+
+  <section class="sub-header s-h-classes">
+
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.jpg" alt="logo">
+      </a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="classes.html">Звания</a></li>
+          <li><a href="locations.html">Карты</a></li>
+          <li><a href="updates.html">Обновления</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Звания</h1>
+
+  </section>
+
+  <!-- END header -->
+
+  <!-- classes -->
+
+  <section class="page__classes">
+
+    <div class="row">
+      <div class="epochs-col">
+        <img src="img/1.png" alt="london">
+        <div class="layer">
+          <h3> Silver I</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/2.png" alt="london">
+        <div class="layer">
+          <h3>Silver II</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/3.png" alt="london">
+        <div class="layer">
+          <h3>Silver III</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="epochs-col">
+        <img src="img/4.png" alt="london">
+        <div class="layer">
+          <h3>Silver IV</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/5.png" alt="london">
+        <div class="layer">
+          <h3>Silver Elite</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/6.png" alt="london">
+        <div class="layer">
+          <h3>Silver Elite Master</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="epochs-col">
+        <img src="img/7.png" alt="london">
+        <div class="layer">
+          <h3>Gold Nova I</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/8.png" alt="london">
+        <div class="layer">
+          <h3>Gold Nova II</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/9.png" alt="london">
+        <div class="layer">
+          <h3>Gold Nova III</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="epochs-col">
+        <img src="img/10.png" alt="london">
+        <div class="layer">
+          <h3>Gold Nova Master</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/11.png" alt="london">
+        <div class="layer">
+          <h3>Master Guardian I</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/12.png" alt="london">
+        <div class="layer">
+          <h3> Master Guardian II</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="epochs-col">
+        <img src="img/13.png" alt="london">
+        <div class="layer">
+          <h3>Master Guardian Elite</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/14.png" alt="london">
+        <div class="layer">
+          <h3>Distinguished Master Guardian</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/15.png" alt="london">
+        <div class="layer">
+          <h3> Legendary Eagle</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="epochs-col">
+        <img src="img/16.png" alt="london">
+        <div class="layer">
+          <h3>Legendary Eagle Master</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/17.png" alt="london">
+        <div class="layer">
+          <h3>Supreme Master First Class</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/18.png" alt="london">
+        <div class="layer">
+          <h3> The Global Elite</h3>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- end classes -->
+
+  <!-- footer -->
+
+  <section class="footer">
+    <h3>Counter-Strike: Global Offensive</h3>
+    <div class="icons">
+      <a href="https://twitter.com/valvesoftware" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com/channel/UCg0FSqPeiGD_lIiPaaAehQg" class="fa fa-youtube"></a>
+      <a href="https://www.twitch.tv/valve?lang=ru-RU" class="fa fa-twitch"></a>
+    </div>
+
+  </section>
+
+  <!-- end footer -->
+
+  <script>
+    let navLinks = document.getElementById('navLinks');
+    function showMenu() {
+      navLinks.style.right = '0';
+    }
+    function hideMenu() {
+      navLinks.style.right = '-200px';
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/7860584906.js" crossorigin="anonymous"></script>
+</body>
+</html>

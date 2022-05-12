@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <title>Counter-Strike</title>
+</head>
+<body>
+  
+  <!-- header -->
+
+  <section class="sub-header s-h-locations">
+
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.jpg" alt="logo">
+      </a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="classes.html">Звания</a></li>
+          <li><a href="locations.html">Карты</a></li>
+          <li><a href="updates.html">Обновления</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>КАРТЫ</h1>
+
+  </section>
+
+  <!-- END header -->
+
+  <!-- facilities -->
+
+  <section class="facilities">
+    
+    <div class="row">
+      <div class="facilities-col">
+        <img src="img/inferno.jpg" alt="library">
+        <h3>Inferno</h3>
+        <p>Inferno по-прежнему одна из самых важных карт в маппуле CS:GO. Карта несколько лет назад была на переработке. Но после возвращения плотно вошла в обиход лучших команд дисциплины. </p>
+      </div>
+      <div class="facilities-col">
+        <img src="img/overpass.jpg" alt="basketball">
+        <h3>Overpass</h3>
+        <p>Действия на карте разворачиваются в Германии. Группа террористов элитного подразделения “Феникс” решает взорвать грузовик с ракетой. Для этого они успешно перекрыли мост, затормозив движение.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="img/train.jpg" alt="cafeteria">
+        <h3>Train</h3>
+        <p>Карта Train относит игрока в сеттинг Советского Союза. Карта Train преподносит геймерам забытую железнодорожную станцию, заполненную вагонами. На этой станции расположены ядерные грузы, являющиеся главной целью террористов.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="facilities-col">
+        <img src="img/dust.jpg" alt="library">
+        <h3>Dust 2</h3>
+        <p>Dust 2 является одной из самых старых карт в мап пуле серии Counter-Strike. От того она пользуется популярностью среди подавляющего числа коммьюнити. Среди плюсов карты стоит отметить не только яркий антураж, но и простоту как защиты, так и атаки.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="img/mirage.jpg" alt="basketball">
+        <h3>Mirage</h3>
+        <p>Действия на карте Mirage разворачиваются в одной из стран Ближнего Востока. Восточный сеттинг отправляет игроков в маленький городок. Если внимательно присмотреться, то можно встретить следы жизни в этом городе. </p>
+      </div>
+      <div class="facilities-col">
+        <img src="img/vert.jpg" alt="cafeteria">
+        <h3>Vertigo</h3>
+        <p>Основные действия на этой карте будут происходить между 50 и 51 этажом строящегося небоскреба под названием Rizzleton, который находится в самом центре города.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="facilities-col">
+        <img src="img/nuke.jpg" alt="library">
+        <h3>Nuke</h3>
+        <p>Карта Nuke переносит игроков в Соединенные Штаты Америки. Действия разворачиваются на территории Атомной Электростанции Cedar Creek, расположенной на Севере страны.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="img/cache.jpg" alt="basketball">
+        <h3>Cache</h3>
+        <p>Действия карты происходят в заброшенном украинском городе Припять, рядом с Чернобыльской атомной электростанцией. Террористы пытаются подорвать тайники с оружием. Спецназ же должен предотвратить подрыв, либо уничтожить террористов.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="img/cobblestone.jpg" alt="cafeteria">
+        <h3>Cobblestone</h3>
+        <p>Карта расположена в замке Лорда Уильяма, что во Франции. У спецназа есть две цели: предотвратить закладку бомбы террористами или же обезвредить бомбу.</p>
+      </div>
+    </div>
+      
+  </section>
+
+  <!-- end facilities -->
+
+  <!-- footer -->
+
+  <section class="footer">
+    <h3>Counter-Strike: Global Offensive</h3>
+    <div class="icons">
+      <a href="https://twitter.com/valvesoftware" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com/channel/UCg0FSqPeiGD_lIiPaaAehQg" class="fa fa-youtube"></a>
+      <a href="https://www.twitch.tv/valve?lang=ru-RU" class="fa fa-twitch"></a>
+    </div>
+  </section>
+
+  <!-- end footer -->
+
+  <script>
+    let navLinks = document.getElementById('navLinks');
+    function showMenu() {
+      navLinks.style.right = '0';
+    }
+    function hideMenu() {
+      navLinks.style.right = '-200px';
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/7860584906.js" crossorigin="anonymous"></script>
+</body>
+</html>

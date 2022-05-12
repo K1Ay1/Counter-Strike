@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <title>Counter-Strike</title>
+</head>
+<body>
+  
+  <!-- header -->
+
+  <header>
+
+    <nav>
+      <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.jpg" alt="logo">
+      </a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="classes.html">Звания</a></li>
+          <li><a href="locations.html">Карты</a></li>
+          <li><a href="updates.html">Обновления</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Counter-Strike</h1>
+      <p>Counter-Strike – онлайн-шутер, суть которого заключается в противостоянии двух команд – террористов и контртеррористов (спецназа). У обеих команд есть цели в раунде, завершив которые, либо полностью уничтожив команду противника, они получают матч-поинт. Выиграв определенное количество раундов, команда выигрывает матч. Самый популярный сценарий – когда террористам нужно заложить бомбу в определенной точке, а спецназу ее обезвредить.</p>
+      <a href="updates.html" class="hero-btn">ПОСМОТРЕТЬ ОБНОВЛЕНИЯ</a>
+    </div>
+
+  </header>
+
+  <!-- END header -->
+
+  <!-- epochs -->
+
+  <section class="epochs">
+
+    <h1>ВЫБЕРИ СВОЮ СТОРОНУ</h1>
+    <p>Сыграйте в лучший онлайновый экшен в мире. Примите участие в невероятно реалистичной войне с террористами в этой популярнейшей командной игре. Действуйте совместно с товарищами по команде для достижения стратегических целей. Уничтожайте опорные пункты врага. Освободите заложников. Ваши достижения влияют на успех вашей команды. Успех вашей команды влияет на ваши достижения.</p>
+
+    <div class="row">
+      <div class="epochs-col">
+        <img src="img/ct.png" alt="london">
+        <div class="layer">
+          <h3>Спецназ</h3>
+        </div>
+      </div>
+      <div class="epochs-col">
+        <img src="img/ter.png" alt="london">
+        <div class="layer">
+          <h3>Террористы</h3>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- END epochs -->
+
+  <!-- classes -->
+
+  <section class="heroes">
+    <div class="row">
+      <div class="heroes-col">
+        <img src="img/2.jpg" alt="">
+      </div>
+      <div class="heroes-col classes-col">
+        <h1>СИСТЕМА ЗВАНИЙ</h1>
+        <p>Чем лучше вы играете в кс – тем выше звание, и тем лучше работает матчмейкинг игры, подбирая вам более скилловых соперников, что в свою очередь улучшает и ваш уровень игры</p>
+        <a href="classes.html" class="hero-btn red-btn">ИЗУЧИТЬ ЗВАНИЯ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- END classes -->
+
+  <!-- locations -->
+
+  <section class="heroes">
+    <div class="row row-adaptive">
+      <div class="heroes-col heroes-col-adaptive-1">
+        <h1>Разнообразие карт</h1>
+        <p>Соревновательный режим в Counter Strike Global Offensive богат огромным количеством карт, где пользователи могут с удовольствием проводить время. В основном, в этом режиме можно встретиться с картами, которые предусматривает сценарий с установкой и разминированием бомбы соответственно. При этом стоит отметить, что список карт соревновательного режима регулярно обновляется.</p>
+        <a href="locations.html" class="hero-btn red-btn">ПОСМОТРЕТЬ КАРТЫ</a>
+      </div>
+      <div class="heroes-col heroes-col-adaptive-2">
+        <img src="img/map.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- END locations -->
+
+  <!-- call to action -->
+
+  <section class="cta">
+    <h1>БУДЬТЕ В КУРСЕ ОБНОВЛЕНИЙ <br> Counter-Strike: Global Offensive</h1>
+    <a href="updates.html" class="hero-btn">ПОСМОТРЕТЬ ОБНОВЛЕНИЯ</a>
+  </section>
+
+  <!-- end call to action -->
+
+  <!-- footer -->
+
+  <section class="footer">
+    <h3>Counter-Strike: Global Offensive</h3>
+    <div class="icons">
+      <a href="https://twitter.com/valvesoftware" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com/channel/UCg0FSqPeiGD_lIiPaaAehQg" class="fa fa-youtube"></a>
+      <a href="https://www.twitch.tv/valve?lang=ru-RU" class="fa fa-twitch"></a>
+    </div>
+  </section>
+
+  <!-- end footer -->
+
+  <script>
+    let navLinks = document.getElementById('navLinks');
+    function showMenu() {
+      navLinks.style.right = '0';
+    }
+    function hideMenu() {
+      navLinks.style.right = '-200px';
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/7860584906.js" crossorigin="anonymous"></script>
+</body>
+</html>
